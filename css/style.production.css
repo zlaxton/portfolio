@@ -1,0 +1,603 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+  background-color: #f5f241;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid {
+  font-size: 20px;
+}
+
+.grid__item {
+  background-color: lightgray;
+  width: auto;
+  min-height: auto;
+  margin: 0;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 10px 300px 10px 300px;
+  grid-template-columns: 300px 300px 300px;
+  -ms-grid-rows: 300px 10px 300px;
+  grid-template-rows: 300px 300px;
+  row-gap: 10px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  padding: 10px;
+}
+
+.grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+​ .grid {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 0.1px;
+}
+
+#logo {
+  position: relative;
+  top: 20px;
+  left: 100px;
+}
+
+.profile {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.profile-portrait {
+  float: left;
+  width: 300px;
+  margin-right: 50px;
+  border-radius: 50%;
+}
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+#main-navigation .page-header__item {
+  top: 0px;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.flex-item {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+  margin: 0px 5px 0px 5px;
+}
+
+.menu {
+  font-size: 20px;
+  margin-right: 70px;
+  margin-top: 20px;
+  color: white;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background-color: black;
+  color: #EBEBEB;
+}
+
+.button {
+  background-color: black;
+  color: #EBEBEB;
+}
+
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  /*background-color: #357b70;*/
+  /*color: white;*/
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  /*background-color: #357b70;*/
+  /*color: white;*/
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+button:hover, button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.button {
+  /* overwrites browser defaults */
+  /* resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* style button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+button {
+  /* overwrites browser defaults */
+  /* resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* style button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: #faae09;
+  color: #ad155c;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: greenyellow;
+}
+
+a:active {
+  color: yellow;
+}
+
+#my-link {
+  /* id selector */
+  color: darkblue;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#my-link:hover, :focus {
+  color: cyan;
+}
+
+.my-link {
+  /* class selector */
+  color: blue;
+}
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #377c72;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.welcome {
+  font-size: 100px;
+  position: static;
+  padding-left: 700px;
+}
+
+.page-title {
+  margin: 0 auto 30px auto;
+}
+
+.page-content {
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+
+.page-footer {
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin: 0 auto;
+}
+
+#about {
+  width: 50%;
+  margin: 0px auto 20px auto;
+  position: static;
+  text-align: center;
+}
+
+#developer {
+  width: 50%;
+  margin: 0px auto 20px auto;
+  text-align: center;
+}
+
+#guitar {
+  width: 50%;
+  margin: 0px auto 0px auto;
+  text-align: center;
+}
+
+.custom-table {
+  width: 100%;
+  text-align: center;
+}
+
+.table-header {
+  background-color: #EBEBEB;
+}
+
+.table-row {
+  text-align: center;
+}
+
+.berlin-illustration {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sun {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: color-change;
+          animation-name: color-change;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.sun {
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-name: cloud-move;
+          animation-name: cloud-move;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.cloud-back {
+  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+          animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+
+.footer-line {
+  width: 50%;
+  height: 0.5px;
+  border-width: 0px;
+  background-color: #808080;
+  margin: 15px auto 15px auto;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}

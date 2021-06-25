@@ -1,0 +1,448 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+:root {
+  --body-background-color: #f5f241;
+  --grid__item-background-color: lightgray;
+  --grid-background-color: rgba(255, 255, 255, 0.8);
+  --button-background-color: black;
+  --button-color: #EBEBEB;
+  --button__secondary-background-color: #faae09;
+  --button__secondary-color: #ad155c;
+  --a-link-color: red;
+  --a-visited-color: green;
+  --a-hover-color: greenyellow;
+  --a-active-color: yellow;
+  --my-link-id-color: darkblue;
+  --my-link-hover-focus: cyan;
+  --my-link-class-color: blue;
+  --fity-percent: 50%;
+  --ten-pixels: 10px;
+  --twentypx: 20px;
+  --m-width: width(50%);
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+  background-color: var(--body-background-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid {
+  font-size: var(--twentypx);
+}
+
+.grid__item {
+  background-color: var(--grid__item-background-color);
+  width: auto;
+  min-height: auto;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  row-gap: var(--ten-pixels);
+  column-gap: var(--ten-pixels) ;
+  padding: var(--ten-pixels);
+}
+
+​ .grid {
+  background-color: var(--grid-background-color);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 0.1px;
+}
+
+#logo {
+  position: relative;
+  top: var(--twentypx);
+  left: 100px;
+}
+
+.profile {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.profile-portrait {
+  float: left;
+  width: 300px;
+  margin-right: 50px;
+  border-radius: var(--fity-percent);
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: var(--twentypx);
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+#main-navigation .page-header__item {
+  top: 0px;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.flex-item {
+  flex: none;
+  align-self: auto;
+  margin: 0px 5px 0px 5px;
+}
+
+.menu {
+  font-size: var(--twentypx);
+  margin-right: 70px;
+  margin-top: var(--twentypx);
+  color: white;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button, .button {
+  background-color: var(--button-background-color);
+  color: var(--button-color);
+}
+
+.button, button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  /*background-color: #357b70;*/
+  /*color: white;*/
+  text-decoration: none;
+  padding: var(--ten-pixels);
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+
+button:hover, button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.button, button {
+  /* overwrites browser defaults */
+  /* resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* style button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  padding: var(--ten-pixels);
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: var(--button__secondary-background-color);
+  color: var(--button__secondary-color);
+}
+
+a:link {
+  color: var(--a-link-color);
+}
+
+a:visited {
+  color: var(--a-visited-color);
+}
+
+a:hover {
+  color: var(--a-hover-color);
+}
+
+a:active {
+  color: var(--a-active-color);
+}
+
+#my-link {
+  /* id selector */
+  color: var(--my-link-id-color);
+  transition: all 0.2s linear;
+}
+
+#my-link:hover, :focus {
+  color: cyan;
+}
+
+.my-link {
+  /* class selector */
+  color: blue;
+}
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #377c72;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: var(--ten-pixels);
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.welcome {
+  font-size: 100px;
+  position: static;
+  padding-left: 700px;
+}
+
+.page-title {
+  margin: 0 auto 30px auto;
+}
+
+.page-content {
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+
+.page-footer {
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display:flex;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+}
+
+#about {
+  width: var(--fity-percent);
+  margin: 0px auto var(--twentypx) auto;
+  position: static;
+  text-align: center;
+}
+
+#developer {
+  width: var(--fity-percent);
+  margin: 0px auto var(--twentypx) auto;
+  text-align: center;
+}
+
+#guitar {
+  width: var(--fity-percent);
+  margin: 0px auto 0px auto;
+  text-align: center;
+}
+
+.custom-table {
+  width: 100%;
+  text-align: center;
+}
+
+.table-header {
+  background-color: #EBEBEB;
+}
+
+.table-row {
+  text-align: center;
+}
+
+.berlin-illustration {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.footer-line {
+  width: var(--fity-percent);
+  height: 0.5px;
+  border-width: 0px;
+  background-color: #808080;
+  margin: 15px auto 15px auto;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: var(--ten-pixels);
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
