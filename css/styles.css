@@ -4,13 +4,13 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+@import url(./fonts.css);
 :root {
   --body-background-color: #f5f241;
   --grid__item-background-color: lightgray;
   --grid-background-color: rgba(255, 255, 255, 0.8);
   --button-background-color: black;
-  --button-color: #EBEBEB;
+  --button-color: #ebebeb;
   --button__secondary-background-color: #faae09;
   --button__secondary-color: #ad155c;
   --a-link-color: red;
@@ -27,7 +27,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -40,7 +40,87 @@ body {
   box-sizing: border-box;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -66,7 +146,17 @@ h3 {
 
 /* HTML5 display-role reset for older browsers */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -90,7 +180,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 300px 300px;
   row-gap: var(--ten-pixels);
-  column-gap: var(--ten-pixels) ;
+  column-gap: var(--ten-pixels);
   padding: var(--ten-pixels);
 }
 
@@ -168,16 +258,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -186,12 +281,14 @@ table {
   border-spacing: 0;
 }
 
-button, .button {
+button,
+.button {
   background-color: var(--button-background-color);
   color: var(--button-color);
 }
 
-.button, button {
+.button,
+button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
@@ -209,14 +306,16 @@ button, .button {
   transition-property: opacity;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
 
-.button, button {
+.button,
+button {
   /* overwrites browser defaults */
   /* resets the border */
   border: none;
@@ -234,7 +333,10 @@ button:hover, button:focus {
   transition: 0.2s opacity;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
@@ -268,7 +370,8 @@ a:active {
   transition: all 0.2s linear;
 }
 
-#my-link:hover, :focus {
+#my-link:hover,
+:focus {
   color: cyan;
 }
 
@@ -314,7 +417,7 @@ button {
   bottom: 0;
   width: 100%;
   text-align: center;
-  display:flex;
+  display: flex;
   flex-flow: row nowrap;
   margin: 0 auto;
 }
@@ -344,7 +447,7 @@ button {
 }
 
 .table-header {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .table-row {
