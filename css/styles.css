@@ -6,7 +6,7 @@
 */
 @import url(./fonts.css);
 :root {
-  --body-background-color: #f5f241;
+  --body-background-color: #ffffff;
   --grid__item-background-color: lightgray;
   --grid-background-color: rgba(255, 255, 255, 0.8);
   --button-background-color: black;
@@ -16,7 +16,7 @@
   --a-link-color: red;
   --a-visited-color: green;
   --a-hover-color: greenyellow;
-  --a-active-color: yellow;
+  --a-active-color: rgb(255, 255, 0);
   --my-link-id-color: darkblue;
   --my-link-hover-focus: cyan;
   --my-link-class-color: blue;
@@ -158,6 +158,16 @@ menu,
 nav,
 section {
   display: block;
+}
+
+/* home section styling */
+.home {
+  display: flex;
+  background: url("image\background1.jpg") no-repeat center;
+  color: #4c748d;
+  height: 100vh;
+  background-size: cover;
+  font-family: "Archivo Narrow", sans-serif;
 }
 
 .grid {

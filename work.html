@@ -1,116 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zlatan Kopic - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="img/x-icon" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zlatan Kopic - Portfolio</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital@1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-</head>
+  <body>
+    <!-- Header including the logo and the main navigation -->
+    <header class="page-header">
+      <!-- Add Logo here -->
+      <img
+        id="logo"
+        src="img/logo.png"
+        alt="Logo"
+        title="Zlatan Kopic"
+        class="page-header__item"
+      />
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list around">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <!-- Header including the logo and the main navigation -->
-  <header class="page-header">
-    <!-- Add Logo here -->
-    <img id="logo" src="image/logo.png" alt="Logo" title="Zlatan Kopic" class="page-header__item">
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Main content -->
+    <main></main>
+    <section>
+      <h1 class="aligncenter">Work</h1>
+      <p class="aligncenter">This is a selection of my projects as a web developer. Most of them are study projects,
+        created during the Fullstack Webdeveloper course @CarrerFoundry.</p>
+      <p class="aligncenter">For the study projects I also worked with Kanban boards, user stories, user flows and
+        architectural diagrams.</p>
+      <p class="aligncenter">More details about the features, technologies, etc. of each project can be found in the
+        respective readme file on GitHub.</p>
+      </br>
 
-  <!-- Main content -->
-  <section>
-    <h1>
-      Work </h1>
-    <div class="grid">
-      <!-- Grid items will live here -->
+      <div class="grid">
+        <!-- Grid items will live here -->
 
+        <div class="grid__item">
+          <h2>Portfolio website</h2>
+          <div class="screenshot-container_1pic">
+            <img class="screenshot" src="img\screenshots\portfolio2.PNG" alt="Portfolio screenshot.">
+          </div>
+          <p>This started as a static website to learn HTML and CSS, but turned into a full grown portfolio website.</p>
+          <p>For practice reasons I chose to refrain from rebuilding it using librarys or build tools, so every line of
+            code here is hand-written.</p>
+          <p class="no-bottom-padding">Technologies:</p>
+          <ul class="no-top-gap">
+            <li>CSS basics like float, flexbox, grid, variables, animations</li>
+            <li>HTML basics like forms, tables, header, footer</li>
+            <li>Full responsiveness</li>
+            <li>Full accessibility</li>
+          </ul>
+          <div class="aligncenter">
+            <a href="https://github.com/zlaxton/portfolio" target="_blank"
+              rel="noopener noreferrer">Portfolio website on GitHub</a>
+          </div>
+        </div>
+        <div class="grid__item">
+          <h2>Meet app</h2>
+          <div class="screenshot-container_2pics">
+            <img class="screenshot" src="img/Screenshots/Screenshot_MeetApp-1.png" alt="Meet app screenshot 1.">
+            <img class="screenshot" src="img/Screenshots/Screenshot_MeetApp-2.png" alt="Meet app screenshot 1.">
+          </div>
+          <p>This app displays events in different cities which are fetched from Google Calendar API.</p>
+          <p>The study goal was to learn about PWAs, test-driven-development (TDD), serverless functions, OAuth (a
+            mechanism to log into an app with your google account), performance monitoring and how to draw pretty
+            charts.</p>
+          <p>PWA (progressive web application) means it is responsive, available offline, cross-platform and can be
+            added to the home screen.</p>
+          <p class="no-bottom-padding">Features:</p>
+          <ul class="no-top-gap">
+            <li>Show/hide event details</li>
+            <li>Filter by city name</li>
+            <li>Choose number of events</li>
+            <li>Chart 1: Number of upcoming events per city</li>
+            <li>Chart 2: Popularity of topics</li>
+          </ul>
+          <p>Built with CRA (CreatReactApp), following the TDD (test driven development) approach.</p>
+          <p>Main technologies used: React, CSS, serverless (AWS lambda), OAuth (Google Cloud Console), Axios, Recharts,
+            Jest (Enzyme, Cucumber, Puppeteer), Atatus (performance monitoring)</p>
+          <div class="aligncenter">
+            <a href="https://zlaxton.github.io/meet/" target="_blank" rel="noopener noreferrer">MeetApp live
+              demo</a></br>
+            <a href="https://github.com/zlaxton/meet" target="_blank" rel="noopener noreferrer">MeetApp on
+              GitHub</a>
+          </div>
+        </div>
 
+        <div class="grid__item">
+          <h2>myFlix-Angular-client</h2>
+          <div class="screenshot-container_1pic">
+            <img class="screenshot" src="img/Screenshots/Screenshot_MoveX-Angular.png"
+              alt="Screenshot of the myFlix-Angular-client.">
+          </div>
+          <p>myFlix is a library of movements from various styles and traditions, with descriptions/cues and video
+            sources.</p>
+          <p>For the myFlix study project I created an API including a non-relational database, as well as two different
+            frontend clients (Angular and React).</p>
+          <p>This is the Angular client - A single-page, responsive web application (SPA), using Material design.</p>
+          <p class="no-bottom-padding">Features:</p>
+          <ul class="no-top-gap">
+            <li>View a list of all moves</li>
+            <li>See details for each move, style or source</li>
+            <li>User registration and login</li>
+            <li>Update profile (username, password, email, birthday)</li>
+            <li>Users can add to add remove a move to/from their list of favorites</li>
+            <li>Users can delete their account</li>
+          </ul>
+          <p>Main technologies used: TypeScript, Angular, Angular-Material, CSS, TypeDoc for documentation, hosting on
+            GitHub-pages.</p>
+          <div class="aligncenter">
+            <a href="https://zlaxton.github.io/myFlix-Angular-client" target="_blank" rel="noopener noreferrer">myFlix
+              Angular live demo</a></br>
+            <a href="https://github.com/zlaxton/myFlix-Angular-client" target="_blank" rel="noopener noreferrer">myFlix
+              Angular client on GitHub</a>
+          </div>
+        </div>
 
+        <div class="grid__item">
+          <h2>myFlix-client</h2>
+          <div class="screenshot-container_1pic">
+            <img class="screenshot" src="img/Screenshots/Screenshot_MoveX-React.png"
+              alt="Screenshot of the myFlix-client.">
+          </div>
+          <p>This is the React-based frontend - A single-page, responsive web application (SPA), built with React
+            (including a number of additional modules), following the MVC design pattern.</p>
+          <p>For general info about myFlix see the Angular client.</p>
+          <p>Basic features: see Angular client. The React version additionally has thorough form validation and a
+            search function.</p>
+          <p>Main technologies used: JavaScript, React, React Bootstrap, React Redux, Axios, Parcel, PropTypes, Netlify
+            hosting.</p>
+          <div class="aligncenter">
+            <a href="https://myFlix-client.netlify.app/" target="_blank" rel="noopener noreferrer">myFlix-client live
+              demo</a></br>
+            <a href="https://github.com/zlaxton/myFlix-client" target="_blank" rel="noopener noreferrer">myFlix-client on GitHub</a>
+          </div>
+        </div>
 
-      <div class="grid__item">
-        <h2>Mobile web app</h2>
-        <p>
-          Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've
-          created the HTML and CSS templates.
-        </p>
-        <a href="#">See project on GitHub</a>
+        
+
+        <div class="grid__item">
+          <h2>Chat-App
+          </h2>
+          <div class="screenshot-container_3pics">
+            <img class="screenshot" src="img\screenshots\chat app1.png"
+              alt="Screenshot of the Chat-App
+              start screen.">
+            <img class="screenshot" src="img/Screenshots/Screenshot_CHATzam_ChatScreen.jpg"
+              alt="Screenshot of the Chat-App
+              chat screen.">
+            <img class="screenshot" src="img/Screenshots/Screenshot_CHATzam_ActionSheet.jpg"
+              alt="Screenshot of the Chat-App
+              action sheet.">
+          </div>
+          <p>A chat app for mobile devices (Android and iOS) created with React Native.</p>
+          <p>The study goals here were to learn how to develop and test cross-platform native apps.</p>
+          <p class="no-bottom-padding">Features:</p>
+          <ul class="no-top-gap">
+            <li>Enter username</li>
+            <li>Choose background color</li>
+            <li>Send and receive messages</li>
+            <li>Share pictures from the devices gallery</li>
+            <li>Take and share photos</li>
+            <li>Share location</li>
+            <li>See past messages even while offline</li>
+          </ul>
+          <p>Main technologies used: JavaScript, React Native, Android Studio, Expo, Google Firebase.</p>
+          <div class="aligncenter">
+            <a href="https://github.com/zlaxton/Chat-App" target="_blank" rel="noopener noreferrer">Chat-App on
+              GitHub</a>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <h2>pokedex-js</h2>
+          <div class="screenshot-container_2pics">
+            <img class="screenshot" src="img\screenshots\pokedex1.PNG"
+              alt="Pokedex screenshot 1: Main screen.">
+            <img class="screenshot" src="img\screenshots\pokedex2.PNG"
+              alt="Pokedex screenshot 2: Modal with details of a Pokemon.">
+          </div>
+          <p>An app to show a list of Pokemon from a public API.</p>
+          <p class="no-bottom-padding">Features:</p>
+          <ul class="no-top-gap">
+            <li>Load Pokemon data from a public external API</li>
+            <li>Render a button for each Pokemon</li>
+            <li>Open a modal when button is clicked, to show details about the Pokemon</li>
+            <li>Filter bar to search Pokemon by name</li>
+          </ul>
+          <p>The study goals were to learn DOM manipulation with JavaScript, jQuery, styling with Bootstrap, and code
+            optimization with linters and minfiers.</p>
+          <div class="aligncenter">
+            <a href="https://zlaxton.github.io/pokedex-js/" target="_blank" rel="noopener noreferrer">Pokedéx live
+              demo</a></br>
+            <a href="https://github.com/zlaxton/pokedex-js" target="_blank" rel="noopener noreferrer">Pokedéx on
+              GitHub</a>
+          </div>
+        </div>
+
       </div>
+    </section>
+  </main>
 
-
-      <div class="grid__item">
-        <h2>Native MacOS application</h2>
-        <p>
-          Within this project, I was responsible for the frontend. I was responsible for the front-end. It was
-          written in JavaFX.
-        </p>
-        <a href="#">See project on GitHub</a>
+    <!-- Footer with links to social media profiles -->
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a class="flex-item" href="https://github.com" target="_blank"
+          ><img src="img/github.svg" alt="github" title="GitHub"
+        /></a>
+        <a class="flex-item" href="https://twitter.com" target="_blank"
+          ><img src="img\twitter.svg" alt="twitter" title="Twitter"
+        /></a>
+        <a class="flex-item" href="https://www.linkedin.com" target="_blank"
+          ><img src="img/linkedin.svg" alt="linkedin" title="LinkedIn"
+        /></a>
       </div>
+    </footer>
 
-      <div class="grid__item">
-        <h2>Node.js pdf generation</h2>
-        <p>
-          Within this project, I created a service that generates pdf out of webpages with the help of a node.js
-          server.
-        </p>
-        <a href="#">See project on GitHub</a>
-      </div>
-
-      <div class="grid__item">
-        <h2>Styleguide for portfolio page</h2>
-        <p>
-          Here you can find the styleguide I've created for this portfolio page. It was created with the
-          livingstyleguide gem and grunt.
-        </p>
-        <a href="#">See project on GitHub</a>
-      </div>
-
-      <div class="grid__item">
-        <h2>Medium Blog</h2>
-        <p>
-          I am also writing on medium.com about React.js.
-        </p>
-        <a href="#">See project on GitHub</a>
-      </div>
-      <div class="grid__item">
-        <h2>Your project?</h2>
-        <p>
-          I can help realizing front-end and back-end projects with the following technologies: React.js,
-          JavaScript, Java, JavaFX, HTML and CSS. I am also happy to learn other technologies if needed.
-        </p>
-        <a href="#">See project on GitHub</a>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- Footer with links to social media profiles -->
-  <footer class="page-footer">
-    <p>Find me on</p>
-    <a class="flex-item" href="https://github.com" target="_blank"><img src="image/github.svg" alt="github"
-        title="GitHub"></a> <a class="flex-item" href="https://twitter.com" target="_blank"><img src="image/twitter.svg"
-        alt="twitter" title="Twitter"></a> <a class="flex-item" href="https://www.linkedin.com" target="_blank"><img
-        src="image/linkedin.svg" alt="linkedin" title="LinkedIn"></a>
-  </footer>
-
-  <script src="js/tota11y.min.js"></script>
-</body>
-
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>

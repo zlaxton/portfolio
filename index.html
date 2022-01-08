@@ -10,31 +10,27 @@
     <!-- font awesome icons -->
     <link rel="stylesheet" href="./css/all.min.css" />
     <!-- Custom css file -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital@1&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="img/x-icon" />
   </head>
 
   <body>
-    <div>
-      <p class="welcome">WELCOME</p>
-    </div>
-
     <header class="page-header">
       <img
         id="logo"
-        src="image/logo.png"
+        src="img/logo.png"
         alt="Logo"
         title="Zlatan Kopic"
         class="page-header__item"
       />
       <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
+        <ul role="menubar" class="navigation-list around">
           <li role="presentation">
             <a
               href="index.html"
@@ -65,40 +61,56 @@
       </nav>
     </header>
     <br />
-    <div class="profile">
-      <img
-        src="image/zlatan.jpg"
-        class="profile-portrait"
-        alt="Zlatan Kopic Portrait"
-        title="Zlatan Kopic"
-      />
-      <a
-        href="https://www.google.com"
-        class="my-link"
-        id="my-link"
-        target="_blank"
-        >A link</a
-      >
-      <br />
-      <a href="https://github.com" target="_blank">Check out some of my code</a>
-      <br />
-      <br />
-    </div>
+
+    <main>
+      <div class="profile">
+        <h1>Welcome to the world of Zlax</h1>
+        <br />
+        <div class="mobile-start">
+          <img
+            src="img/zlatan.jpg"
+            class="profile-portrait"
+            alt="Zlatan Kopic Portrait"
+            title="Zlatan Kopic"
+          />
+        </div>
+        <br />
+        <p class="mobile-start">
+          My name is Zlatan Kopic. I am a <span>web developer</span> based in
+          Berlin, Germany.
+        </p>
+        <p>
+          My expertise is in JavaScript and its libraries and frameworks
+          (particularly React and Angular).
+        </p>
+        <p>
+          But I am also a certified Graphic Designer and IT Network System
+          Administrator.
+        </p>
+        <br /><br />
+        <a href="work.html" class="button">Check out some of my code</a>
+        <a href="contact.html" class="button">Hire me!</a>
+      </div>
+    </main>
+
     <!-- Jquery js file -->
     <script src="./js/jquery3.6.0.min.js"></script>
     <!-- Bootstrap js file -->
     <script src="./js/bootstrap.min.js"></script>
+
     <footer class="page-footer">
-      <p>Find me on</p>
-      <a class="flex-item" href="https://github.com" target="_blank"
-        ><img src="image/github.svg" alt="github" title="GitHub"
-      /></a>
-      <a class="flex-item" href="https://twitter.com" target="_blank"
-        ><img src="image/twitter.svg" alt="twitter" title="Twitter"
-      /></a>
-      <a class="flex-item" href="https://www.linkedin.com" target="_blank"
-        ><img src="image/linkedin.svg" alt="linkedin" title="LinkedIn"
-      /></a>
+      <p>Connect with me</p>
+      <div class="social-media">
+        <a class="flex-item" href="https://github.com" target="_blank"
+          ><img src="img/github.svg" alt="github" title="GitHub"
+        /></a>
+        <a class="flex-item" href="https://twitter.com" target="_blank"
+          ><img src="img\twitter.svg" alt="twitter" title="Twitter"
+        /></a>
+        <a class="flex-item" href="https://www.linkedin.com" target="_blank"
+          ><img src="img/linkedin.svg" alt="linkedin" title="LinkedIn"
+        /></a>
+      </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
   </body>
