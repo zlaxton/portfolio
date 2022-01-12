@@ -353,7 +353,7 @@ td {
   text-align: center;
 }
 @supports (display: grid) {
-  .project-grid {
+  .grid {
     width: 100%;
     display: -ms-grid;
     display: grid;
