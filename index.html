@@ -1,116 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Zlatan Kopic - Portfolio</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zlatan Kopic - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Dark Mode Toggle -->
+  <button id="dark-mode-toggle" class="dark-mode-toggle">🌙</button>
 
-    <!-- Bootstrap css file -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <!-- Custom css file -->
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="img/x-icon" />
-  </head>
+  <!-- Header -->
+  <header class="page-header">
+    <div class="page-header__item">
+      <a href="#home">
+        <img id="logo" src="img/logo3.png" alt="Zlatan Kopic">
+      </a>
+    </div>
+    <nav class="page-header__item">
+      <ul class="navigation-list">
+        <li><a href="#home" class="navigation-list__item--active">Home</a></li>
+        <li><a href="#about" class="navigation-list__item">About</a></li>
+        <li><a href="#work" class="navigation-list__item">Work</a></li>
+        <li><a href="#contact" class="navigation-list__item">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <body>
-    <header class="page-header">
-      <img
-        id="logo"
-        src="img/logo.png"
-        alt="Logo"
-        title="Zlatan Kopic"
-        class="page-header__item"
-      />
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list around">
-          <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="work.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Work</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <br />
-
-    <main>
-      <div class="profile">
-        <h1>Welcome to the world of Zlax</h1>
-        <br />
+  <!-- Main Content -->
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="profile">
+      <div class="profile__content">
+        <h1>Welcome!</h1>
         <div class="mobile-start">
-          <img
-            src="img/zlatan.jpg"
-            class="profile__portrait"
-            alt="Zlatan Kopic Portrait"
-            title="Zlatan Kopic"
-          />
+          <img src="img/zlatan.jpg" class="profile__portrait" alt="Zlatan Kopic Portrait">
+          <p>
+            I'm Zlatan Kopic, a web developer from Sarajevo, Bosnia and Herzegovina, specializing in creating dynamic and user-friendly web applications.
+          </p>
         </div>
-        <br />
-        <p class="mobile-start">
-          My name is Zlatan Kopic. I am a <span>web developer</span> based in
-          Berlin, Germany.
-        </p>
-        <p>
-          My expertise is in JavaScript and its libraries and frameworks
-          (particularly React and Angular).
-        </p>
-        <p>
-          But I am also a certified Graphic Designer and IT Network System
-          Administrator.
-        </p>
-        <br /><br />
-        <a href="work.html" class="button">Check out some of my code</a>
-        <a href="contact.html" class="button">Hire me!</a>
+        <div class="buttons">
+          <a href="#work" class="button">Check out some of my code</a>
+          <a href="#contact" class="button">Hire me!</a>
+        </div>
       </div>
-    </main>
+    </section>
 
-    <!-- Jquery js file -->
-    <script src="./js/jquery3.6.0.min.js"></script>
-    <!-- Bootstrap js file -->
-    <script src="./js/bootstrap.min.js"></script>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h1>About Me</h1>
+      <p><span>Full-Stack Web Developer,</span> Berlin-Germany</p>
+      <p>This is what I enjoy doing:</p>
+      <ul class="about__list">
+        <li>Web development</li>
+        <li>Graphic design</li>
+        <li>IT network system administration</li>
+        <li>Guitar</li>
+      </ul>
+    </section>
 
-    <footer class="page-footer">
-      <p>Connect with me</p>
-      <div class="social-media">
-        <a class="flex-item" href="https://github.com" target="_blank"
-          ><img src="img/github.svg" alt="github" title="GitHub"
-        /></a>
-        <a class="flex-item" href="https://twitter.com" target="_blank"
-          ><img src="img\twitter.svg" alt="twitter" title="Twitter"
-        /></a>
-        <a class="flex-item" href="https://www.linkedin.com" target="_blank"
-          ><img src="img/linkedin.svg" alt="linkedin" title="LinkedIn"
-        /></a>
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+      <h1>My Projects</h1>
+      <input type="text" id="searchBox" placeholder="Search projects..." onkeyup="searchProjects()">
+      <div class="wide-container">
+        <div class="grid">
+          <!-- Chat App -->
+          <div class="grid__item">
+            <div class="project-container" style="background-image: url('img/screenshots/chat\ app1.png');">
+              <div class="project-details">
+                <h2>Chat App</h2>
+                <p class="project-description">A chat application for mobile devices created with React Native.</p>
+                <div class="button-container">
+                  <a href="https://your-live-demo-link.com" target="_blank" rel="noopener noreferrer" class="button">View Live</a>
+                  <a href="https://github.com/zlaxton/chat-app" target="_blank" rel="noopener noreferrer" class="button">View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- myFlix Client -->
+          <div class="grid__item">
+            <div class="project-container" style="background-image: url('img/screenshots/myFlix\ client.PNG');">
+              <div class="project-details">
+                <h2>myFlix Client</h2>
+                <p class="project-description">A React-based frontend for a movie library application.</p>
+                <div class="button-container">
+                  <a href="https://your-live-demo-link.com" target="_blank" rel="noopener noreferrer" class="button">View Live</a>
+                  <a href="https://github.com/zlaxton/myFlix-client" target="_blank" rel="noopener noreferrer" class="button">View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- myFlix Angular Client -->
+          <div class="grid__item">
+            <div class="project-container" style="background-image: url('img/screenshots/ss\ myflix\ angular.PNG');">
+              <div class="project-details">
+                <h2>myFlix Angular Client</h2>
+                <p class="project-description">A single-page application for managing a movie library.</p>
+                <div class="button-container">
+                  <a href="https://your-live-demo-link.com" target="_blank" rel="noopener noreferrer" class="button">View Live</a>
+                  <a href="https://github.com/zlaxton/myFlix-Angular-client" target="_blank" rel="noopener noreferrer" class="button">View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pokedex -->
+          <div class="grid__item">
+            <div class="project-container" style="background-image: url('img/screenshots/pokedex1.PNG');">
+              <div class="project-details">
+                <h2>Pokedex</h2>
+                <p class="project-description">An app to display a list of Pokémon from a public API.</p>
+                <div class="button-container">
+                  <a href="https://your-live-demo-link.com" target="_blank" rel="noopener noreferrer" class="button">View Live</a>
+                  <a href="https://github.com/zlaxton/pokedex-js" target="_blank" rel="noopener noreferrer" class="button">View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Meet App -->
+          <div class="grid__item">
+            <div class="project-container" style="background-image: url('img/screenshots/meet1.PNG');">
+              <div class="project-details">
+                <h2>Meet App</h2>
+                <p class="project-description">An application that displays events in different cities using Google Calendar API.</p>
+                <div class="button-container">
+                  <a href="https://your-live-demo-link.com" target="_blank" rel="noopener noreferrer" class="button">View Live</a>
+                  <a href="https://github.com/zlaxton/meet" target="_blank" rel="noopener noreferrer" class="button">View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio -->
+          <div class="grid__item">
+            <div class="project-container" style="background-image: url('img/screenshots/portfolio2.PNG');">
+              <div class="project-details">
+                <h2>Portfolio</h2>
+                <p class="project-description">A personal portfolio website showcasing my work and skills.</p>
+                <div class="button-container">
+                  <a href="https://your-live-demo-link.com" target="_blank" rel="noopener noreferrer" class="button">View Live</a>
+                  <a href="https://github.com/zlaxton/portfolio" target="_blank" rel="noopener noreferrer" class="button">View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
-    <script src="js/tota11y.min.js"></script>
-  </body>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-details">
+      <h1>Contact</h1>
+      <div class="contact-info">
+        Zlatan Kopic<br />
+        Edhema Eke Dzubura 40<br />
+        71210 Sarajevo<br />
+        Bosnia and Herzegovina<br />
+        Tel: <a href="#">mob +387 62 383 944</a><br />
+        <a href="mailto:zlatan.kopic171@yahoo.com">zlatan.kopic171@yahoo.com</a>
+      </div>
+    
+      <h3>Leave a message</h3>
+      <form id="contact-form">
+        <div class="form-group">
+          <label class="standard-label" for="contact-email">Email:</label>
+          <input type="email" id="contact-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label class="standard-label" for="contact-tel">Telephone:</label>
+          <input type="tel" id="contact-tel">
+        </div>
+        <div class="form-group">
+          <label class="standard-label" for="contact-message">Message:</label>
+          <textarea id="contact-message" name="message" required maxlength="240"></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a class="flex-item" href="https://github.com/zlaxton" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="flex-item" href="https://twitter.com/zlaxton" target="_blank" rel="noopener noreferrer" aria-label="Visit my Twitter profile">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="flex-item" href="https://www.linkedin.com/in/zlaxton" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
