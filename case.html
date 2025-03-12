@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Comprehensive case study for myFlix movie app project"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/shortcut-icon-img.png"
+      sizes="32x32"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.production.css" />
+    <title>Case Study myFlix App</title>
+  </head>
+
+  <body class="case-body">
+    <header class="case-header">
+      <a href="index.html" class="back-link">&#8249; Go back to main page</a>
+    </header>
+    <div class="case-study" id="case-start">
+      <h1>
+        Case Study for <span class="myflix-style">myFlix</span> full-stack
+        project
+      </h1>
+      <div class="intro">
+        <div class="intro-content">
+          <h2>Overview</h2>
+          <p>
+            <span class="myflix-style">myFlix</span> is a web app, developed
+            using the MERN stack, that provides users with access to information
+            about movies, directors, and genres. Users are able to create an
+            account, update their personal data, and create a list of favorite
+            movies.
+          </p>
+          <br />
+          <h2>Purpose & Context</h2>
+          <p>
+            <span class="myflix-style">myFlix</span> was a personal project I
+            built as part of my web development course at CareerFoundry to
+            demonstrate my mastery of full-stack JavaScript development.
+          </p>
+          <br />
+          <h2>Objective</h2>
+          <p>
+            The aim of the project was to have an ambitious full-stack project I
+            can add to my professional portfolio. The problem I wanted to solve
+            is to build the complete server-side and client-side for the
+            application from scratch.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img
+            src="assets/myflix-fullscreen.png"
+            alt="screenshot of movie list"
+          />
+        </div>
+      </div>
+      <h2 class="approach-title">Approach</h2>
+      <div class="server-side">
+        <div class="server-content">
+          <h3>Server-Side</h3>
+          <p>
+            I created a RESTful API using Node.js and Express, that interacts
+            with a non-relational database (MongoDB). The API can be accessed
+            via commonly used HTTP methods like GET or POST. To retrieve data
+            from and store data in the database, CRUD methods are used. The API
+            provides movie information in JSON format.
+          </p>
+          <br />
+          <p>
+            <a
+              href="https://github.com/zlaxton/myFlix-app#endpoints"
+              class="endpoint-link"
+              target="_blank"
+            >
+              <span class="material-icons arrow-right"> arrow_right </span
+              ><span>View endpoints</span></a
+            >
+          </p>
+          <br />
+          <p>
+            To test the API, I used Postman. I also included user authentication
+            and authorization code in the form of basic HTTP authentication and
+            JWT authentication.
+          </p>
+        </div>
+        <div class="server-img">
+          <img
+            src="assets/postman-unauthorized.png"
+            alt="screenshot of unauthorized postman test"
+          />
+          <img
+            src="assets/postman-authorized.png"
+            alt="screenshot of authorized postman test"
+          />
+        </div>
+      </div>
+      <div class="client-side">
+        <div class="client-content">
+          <h3>Client-Side</h3>
+          <p>
+            After completing the API, I started to build the interface users
+            would need when making requests to, and receiving responses from,
+            the server-side. It is a single-page, responsive application,
+            developed with React and React-Redux. It provides several interface
+            views, including, but not limited to, a main view (shows a list of
+            all movies), single movie view (shows data about a single movie and
+            allows users to add the movie to their list of favorites), a login
+            view, a registration view and a profile view (where users can update
+            their user data and list of favorites).
+          </p>
+        </div>
+        <div class="client-img">
+          <div>
+            <img src="assets/login-mobile.png" alt="screenshot of login view" />
+          </div>
+          <div>
+            <img src="assets/movie-mobile.png" alt="screenshot of movie view" />
+          </div>
+          <div>
+            <img
+              src="assets/profile-mobile.png"
+              alt="screenshot of profile view"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="challenges">
+        <h2>Challenges</h2>
+        <p>
+          This was both my favorite and most challenging project. I have enjoyed
+          building the API and working with database structures. I also quickly
+          became familiar with using the terminal. Developing the client-side,
+          it took me a while to understand how React and Redux work and how to
+          achieve the desired results. But with the help of my great tutor and
+          after a pair-programming session with an experienced developer, I
+          could conquer that mountain.
+        </p>
+      </div>
+      <div class="duration">
+        <h2>Duration</h2>
+        <p>
+          The development of the client-side took me twice as long as it
+          normally took to complete a CareerFoundry achievement. It was because
+          I needed time to wrap my head around how React (and React Redux) work.
+        </p>
+      </div>
+      <div class="credits">
+        <h2>Credits</h2>
+        <ul>
+          <li>Role: Lead Developer</li>
+          <li>Tutor: Terver Aosu</li>
+          <li>Mentor: Nizar Triki</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/zlaxton/myFlix-client" target="_blank">Code</a
+      ><br /><a
+        href="https://rocky-bayou-72593.herokuapp.com/client"
+        target="_blank"
+        >Demo</a
+      ><br /><a href="index.html#work" target="_blank">Back</a>
+    </div>
+
+    <section class="social case-social">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/zlatankopic/" target="_blank"
+            ><img src="assets/linkedin_dark-red.svg" alt="linkedin icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/zlaxton" target="_blank"
+            ><img src="assets/github_dark-red.svg" alt="github icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/eva_grean" target="_blank"
+            ><img src="assets/twitter_dark-red.svg" alt="twitter icon"
+          /></a>
+        </li>
+      </ul>
+    </section>
+    <footer class="case-footer">
+      <p class="credit">&copy; Copyright 2022</p>
+      <p>Designed and developed by Zlatan Kopic</p>
+      <a href="#case-start"
+        ><span class="material-icons arrow-up"> keyboard_arrow_up </span></a
+      >
+    </footer>
+  </body>
+</html>
